@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+  text-align: center;
+}
+
+.campo {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 4px solid #fff;
+  border-radius: 12px;
+}
+
+.campo-fundo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#gol {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  width: 500px;
+  height: 200px;
+  background: transparent;
+  z-index: 2;
+}
+
+#goleiro {
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  left: 200px;
+  transition: left 0.2s ease;
+}
+
+#bola {
+  position: absolute;
+  bottom: 20px;
+  left: 350px;
+  width: 50px;
+  z-index: 1;
+  transition: bottom 0.8s ease, left 0.8s ease;
+}
+
+#chutarBtn {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+}
